@@ -21,7 +21,7 @@ function binarySearch(list, element) {
 
         //Adjusting the midpoint if the element is greater than
         else{
-            low = midpoint - 1;
+            low = midpoint + 1;
         }    
     }
 
