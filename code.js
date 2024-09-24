@@ -7,7 +7,7 @@ function binarySearch(list, element) {
 
     //This will calculate the midpoint that will then be used to compare to other elements
     while (high >= low){
-        midpoint = low + Math.floor((high-low)/2);
+        midpoint = Math.floor((high+low)/2);
 
         //Return the midpoint if it is equal to the element
         if(list[midpoint] === element){
