@@ -11,9 +11,10 @@ function binarySearch(list, element) {
 
         //Return the midpoint if it is equal to the element 
         if (list[midpoint] == element) {
+            let first;
             for (let i = midpoint; list[i] == element; i--) {
                 if (list[i] == element) {
-                    let first = i;
+                    first = i;
                 }
             }
             return first;
