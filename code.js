@@ -8,6 +8,14 @@ function binarySearch(list, element) {
     //This will calculate the midpoint that will then be used to compare to other elements
     while (low <= high){
         let midpoint = Math.floor((high+low)/2);
+        if (list[midpoint] == element) {
+            for (let i = midpoint; list[i] == element; i--) {
+                if (list[i] == element) {
+                    let first = i;
+                }
+            }
+            return first;
+        }
 
         //Return the midpoint if it is equal to the element
         if(list[midpoint] === element){
