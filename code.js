@@ -15,12 +15,12 @@ function binarySearch(list, element) {
         }    
 
         //Adjusting the midpoint if the element is less than
-        else (list[midpoint] > element){
+        else if(list[midpoint] > element){
             high = midpoint - 1;
         }
 
         //Adjusting the midpoint if the element is greater than
-        else if{
+        else {
             low = midpoint + 1;
         }    
     }
