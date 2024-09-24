@@ -3,11 +3,11 @@ function binarySearch(list, element) {
 
     let low = 0;
     let high = list.length-1;
-    let midpoint;
+
 
     //This will calculate the midpoint that will then be used to compare to other elements
     while (low <= high){
-        midpoint = Math.floor((high+low)/2);
+        let midpoint = Math.floor((high+low)/2);
 
         //Return the midpoint if it is equal to the element
         if(list[midpoint] === element){
